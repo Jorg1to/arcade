@@ -1,0 +1,248 @@
+/* BODY */
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: black;
+
+}
+/* MENU */
+nav {
+
+    text-align: center;
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    color: #FF00FF;
+    box-shadow: 0px 0px 10px 4px #FF00FF inset;
+    background-color: #000;
+    position: relative !important;
+    border: 5px solid;
+}
+/* MENU */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Hacer que la lista sea horizontal */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    height: 100%; /* Asegurar que la lista ocupe toda la altura del contenedor */
+    width: 100%; /* Asegurar que la lista ocupe todo el ancho del contenedor */
+}
+/* MENU */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 28px;
+}
+/* MENU */
+nav ul li:last-child {
+    margin-right: 0;
+}
+/* MENU */
+nav ul li a {
+    color: #FF00FF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Añadir espacio alrededor del texto */
+}
+/* MENU */
+nav ul li a:hover {
+    color: yellow;
+}
+/* MENU */
+.logo img {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+/* MENU */
+.blur-img {
+    filter: blur(0); /* Establece el desenfoque inicial en 0 */
+    transition: filter 0.5s ease; /* Agrega una transición suave */
+  }
+  .blur-img:hover {
+    filter: blur(5px); /* Aplica un desenfoque de 5px al pasar el cursor */
+  }
+/* MENU */
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #02FF00;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; /* Cambiar la dirección a columna */
+
+
+}
+
+.welcome,
+.opening-hours {
+
+     /* Establecer un ancho máximo */
+    padding: 20px;
+    color: #FF00FF;
+    background-color: #000; /* Añadir un fondo para resaltar los contenedores */
+    border-radius: 20px; /* Añadir bordes redondeados */
+ 
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row; /* Cambiar a fila en dispositivos más grandes */
+    }
+
+    .welcome,
+    .opening-hours {
+        width: 50%;
+        max-width: none; /* Restablecer el ancho máximo */
+    }
+}
+
+.opening-hours h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Centrar el texto */
+}
+
+.opening-hours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centrar la lista horizontalmente */
+}
+
+.opening-hours li {
+    margin-bottom: 10px;
+    width: auto; /* Restablecer el ancho a automático */
+    font-size: 20px; /* Reducir el tamaño de fuente para dispositivos más pequeños */
+    text-align: center; /* Centrar el texto */
+}
+
+
+p{
+    font-size: 24px;
+}
+
+.btn:hover {
+    background-color: blueviolet; /* Cambiar a tu color deseado */
+   
+}
+
+
+.full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.separadormorado{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #F0F;
+    filter: drop-shadow(0px 0px 10px #F0F);
+
+}
+.separadorverde{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #02FF00;
+    filter: drop-shadow(0px 0px 10px #02FF00);
+
+}
+
+.card-body{
+    background-color: black;
+   
+}
+
+.card-text{
+    color: #02FF00;
+}
+
+.cardh2{
+    color: white;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+}
+.texto-claro{
+    position: relative; /* Hacemos que el texto esté por encima del div oscuro */
+    z-index: 2; /* Aseguramos que el texto esté por encima del tono oscuro */
+    color: #fff; /* Cambiamos el color del texto a blanco */
+}
+
+  
+.fw-normal{
+    color: white;
+}
+
+.nav-link{
+    color: #02FF00;
+}
+
+.text-decoration-none{
+    color: #02FF00;
+}
+
+.cardverde{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    color: #FF00FF;
+    box-shadow: 0px 0px 10px 4px #FF00FF inset;
+    background-color: #000;
+    position: relative !important;
+
+    border: 5px solid;
+
+}
+
+.container-list {
+    max-width: 100%;
+    overflow-x: auto; /* Permite desplazarse horizontalmente si el contenido excede el ancho */
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+  }
+  .list {
+    display: inline-block; /* Muestra las listas en línea */
+    vertical-align: top; /* Alinea las listas en la parte superior */
+    margin-right: 20px; /* Espacio entre las listas */
+  }
+  .list h2 {
+    margin-top: 0; /* Elimina el margen superior de los títulos */
+  }
+
+  .container-lista{
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .h2-lista{
+    color: white;
+  }
+
+
+.social-link {
+        text-decoration: none; /* Elimina el subrayado por defecto */
+    }
+
+    .social-link img {
+        margin-right: 10px; /* Espacio entre los iconos */
+    }
